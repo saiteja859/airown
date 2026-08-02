@@ -13,8 +13,8 @@ export default {
           pearl: '#FBFBFC',
           titanium: '#8E9094',
           graphite: '#3E3E42',
-          gold: '#D4AF37',
-          goldLight: '#F5E6BE',
+          blue: '#0062FF',
+          blueLight: '#E6F0FF',
           copper: '#C87D55',
           copperLight: '#F2E3D8',
           dark: '#121212',
@@ -26,9 +26,9 @@ export default {
       },
       boxShadow: {
         'premium': '0 8px 32px 0 rgba(0, 0, 0, 0.04)',
-        'luxury-glow': '0 0 50px rgba(212, 175, 55, 0.12)',
+        'luxury-glow': '0 0 50px rgba(0, 98, 255, 0.12)',
         'chrome-glow': '0 0 60px rgba(229, 228, 226, 0.5)',
-        'card-hover': '0 20px 40px -15px rgba(0, 0, 0, 0.06), 0 0 30px rgba(212, 175, 55, 0.05)',
+        'card-hover': '0 20px 40px -15px rgba(0, 0, 0, 0.06), 0 0 30px rgba(0, 98, 255, 0.05)',
       },
       animation: {
         'fade-in': 'fadeIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards',

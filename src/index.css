@@ -69,15 +69,15 @@ html.lenis, html.lenis body {
   }
 
   .glass-card:hover {
-    border-color: #D4AF37;
-    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.12);
+    border-color: #0062FF;
+    box-shadow: 0 12px 30px rgba(0, 98, 255, 0.12);
     transform: translateY(-4px);
   }
 
   .glass-card-interactive {
     background: #FFFFFF;
-    border: 1.5px solid #D4AF37;
-    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.08);
+    border: 1.5px solid #0062FF;
+    box-shadow: 0 8px 24px rgba(0, 98, 255, 0.08);
   }
 
   /* Distinct Section Differentiation Backgrounds */
@@ -98,15 +98,15 @@ html.lenis, html.lenis body {
     -webkit-text-fill-color: transparent;
   }
 
-  .text-gradient-gold {
-    background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #9A7B0C 100%);
+  .text-gradient-blue {
+    background: linear-gradient(135deg, #0A2540 0%, #0062FF 50%, #004494 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   /* Background Patterns */
   .bg-dots {
-    background-image: radial-gradient(rgba(212, 175, 55, 0.18) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(0, 98, 255, 0.18) 1px, transparent 1px);
     background-size: 20px 20px;
   }
 }

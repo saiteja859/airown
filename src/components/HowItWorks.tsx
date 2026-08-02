@@ -57,13 +57,13 @@ export default function HowItWorks() {
   return (
     <section
       id="how-it-works"
-      className="relative py-16 md:py-20 overflow-hidden border-b border-gray-200 bg-gradient-to-b from-gray-50 via-luxury-goldLight/10 to-gray-50"
+      className="relative py-16 md:py-20 overflow-hidden border-b border-gray-200 bg-gradient-to-b from-gray-50 via-luxury-blueLight/10 to-gray-50"
     >
       <div className="max-w-5xl mx-auto px-6">
 
         {/* Header */}
         <div className="text-center mb-10">
-          <span className="text-xs font-bold uppercase tracking-widest text-luxury-gold mb-1 block">
+          <span className="text-sm font-bold uppercase tracking-widest text-luxury-blue mb-1 block">
             The Journey
           </span>
           <h2 className="text-2xl md:text-3xl font-light tracking-tight text-luxury-dark">
@@ -79,7 +79,7 @@ export default function HowItWorks() {
           <button
             onClick={goPrev}
             disabled={activeSlide === 0}
-            className="flex-shrink-0 w-11 h-11 rounded-full border-2 border-gray-300 bg-white flex items-center justify-center shadow-sm transition-all duration-200 hover:border-luxury-gold hover:text-luxury-gold disabled:opacity-30 disabled:cursor-not-allowed"
+            className="flex-shrink-0 w-11 h-11 rounded-full border-2 border-gray-300 bg-white flex items-center justify-center shadow-sm transition-all duration-200 hover:border-luxury-blue hover:text-luxury-blue disabled:opacity-30 disabled:cursor-not-allowed"
           >
             <ChevronLeft size={20} />
           </button>
@@ -113,7 +113,7 @@ export default function HowItWorks() {
 
                   {/* Text */}
                   <div className="flex-1 px-6 py-6 sm:px-12 sm:py-12 flex flex-col justify-center">
-                    <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-luxury-gold mb-2 block">
+                    <span className="text-xs font-bold uppercase tracking-[0.25em] text-luxury-blue mb-2 block">
                       Step {step.num}
                     </span>
 
@@ -127,12 +127,12 @@ export default function HowItWorks() {
                       {step.title}
                     </h3>
 
-                    <p className="text-xs sm:text-sm font-light text-luxury-graphite leading-relaxed mb-5 max-w-md">
+                    <p className="text-sm sm:text-base font-light text-luxury-graphite leading-relaxed mb-5 max-w-md">
                       {step.desc}
                     </p>
 
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-50 border border-gray-200 text-[10px] font-bold text-luxury-graphite w-fit">
-                      <span className="h-1.5 w-1.5 rounded-full bg-luxury-gold animate-pulse" />
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-50 border border-gray-200 text-xs font-bold text-luxury-graphite w-fit">
+                      <span className="h-1.5 w-1.5 rounded-full bg-luxury-blue animate-pulse" />
                       {step.detail}
                     </div>
                   </div>
@@ -145,7 +145,7 @@ export default function HowItWorks() {
           <button
             onClick={goNext}
             disabled={activeSlide === steps.length - 1}
-            className="flex-shrink-0 w-11 h-11 rounded-full border-2 border-gray-300 bg-white flex items-center justify-center shadow-sm transition-all duration-200 hover:border-luxury-gold hover:text-luxury-gold disabled:opacity-30 disabled:cursor-not-allowed"
+            className="flex-shrink-0 w-11 h-11 rounded-full border-2 border-gray-300 bg-white flex items-center justify-center shadow-sm transition-all duration-200 hover:border-luxury-blue hover:text-luxury-blue disabled:opacity-30 disabled:cursor-not-allowed"
           >
             <ChevronRight size={20} />
           </button>
@@ -158,7 +158,7 @@ export default function HowItWorks() {
             <button
               key={i}
               onClick={() => { setDirection(i > activeSlide ? 1 : -1); setActiveSlide(i); }}
-              className={`h-1.5 rounded-full transition-all duration-300 ${i === activeSlide ? 'w-8 bg-luxury-gold' : 'w-3 bg-gray-300 hover:bg-gray-400'
+              className={`h-1.5 rounded-full transition-all duration-300 ${i === activeSlide ? 'w-8 bg-luxury-blue' : 'w-3 bg-gray-300 hover:bg-gray-400'
                 }`}
             />
           ))}

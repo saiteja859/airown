@@ -7,9 +7,9 @@ export default function HeroSection() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 640) {
-        setBgImage("url('/assets/mobilehero.png')");
+        setBgImage("url('/assets/mobilehero1.png')");
       } else {
-        setBgImage("url('/assets/hero.png')");
+        setBgImage("url('/assets/hero1.png')");
       }
     };
     handleResize();

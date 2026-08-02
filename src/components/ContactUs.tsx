@@ -122,7 +122,7 @@ export default function ContactUs() {
         
         {/* Header */}
         <div className="text-center mb-10">
-          <span className="text-xs font-bold uppercase tracking-widest text-luxury-gold mb-2 block">
+          <span className="text-sm font-bold uppercase tracking-widest text-luxury-blue mb-2 block">
             Initiate Contact
           </span>
           <h2 className="text-2xl md:text-4xl font-light tracking-tight text-luxury-dark leading-tight">
@@ -148,7 +148,7 @@ export default function ContactUs() {
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div>
-                    <label className="block text-xs font-bold text-luxury-graphite uppercase tracking-widest mb-1.5">
+                    <label className="block text-sm font-bold text-luxury-graphite uppercase tracking-widest mb-1.5">
                       Your Name
                     </label>
                     <input
@@ -158,7 +158,7 @@ export default function ContactUs() {
                       onChange={handleInputChange}
                       disabled={status === 'submitting'}
                       placeholder="e.g. Alexander Mercer"
-                      className={`w-full px-4 py-3 rounded-2xl bg-gray-50 border-2 border-gray-300 text-sm text-luxury-dark placeholder-luxury-titanium/60 focus:outline-none focus:border-luxury-gold focus:bg-white transition-all duration-300 ${
+                      className={`w-full px-4 py-3 rounded-2xl bg-gray-50 border-2 border-gray-300 text-base text-luxury-dark placeholder-luxury-titanium/60 focus:outline-none focus:border-luxury-blue focus:bg-white transition-all duration-300 ${
                         errors.name ? 'border-red-400 focus:border-red-400 bg-red-50/10' : ''
                       }`}
                     />
@@ -170,7 +170,7 @@ export default function ContactUs() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-luxury-graphite uppercase tracking-widest mb-1.5">
+                    <label className="block text-sm font-bold text-luxury-graphite uppercase tracking-widest mb-1.5">
                       Email Address
                     </label>
                     <input
@@ -180,7 +180,7 @@ export default function ContactUs() {
                       onChange={handleInputChange}
                       disabled={status === 'submitting'}
                       placeholder="alexander@mercer.com"
-                      className={`w-full px-4 py-3 rounded-2xl bg-gray-50 border-2 border-gray-300 text-sm text-luxury-dark placeholder-luxury-titanium/60 focus:outline-none focus:border-luxury-gold focus:bg-white transition-all duration-300 ${
+                      className={`w-full px-4 py-3 rounded-2xl bg-gray-50 border-2 border-gray-300 text-base text-luxury-dark placeholder-luxury-titanium/60 focus:outline-none focus:border-luxury-blue focus:bg-white transition-all duration-300 ${
                         errors.email ? 'border-red-400 focus:border-red-400 bg-red-50/10' : ''
                       }`}
                     />
@@ -193,7 +193,7 @@ export default function ContactUs() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-luxury-graphite uppercase tracking-widest mb-1.5">
+                  <label className="block text-sm font-bold text-luxury-graphite uppercase tracking-widest mb-1.5">
                     Phone Number
                   </label>
                   <input
@@ -203,7 +203,7 @@ export default function ContactUs() {
                     onChange={handleInputChange}
                     disabled={status === 'submitting'}
                     placeholder="+1 (555) 019-2834"
-                    className={`w-full px-4 py-3 rounded-2xl bg-gray-50 border-2 border-gray-300 text-sm text-luxury-dark placeholder-luxury-titanium/60 focus:outline-none focus:border-luxury-gold focus:bg-white transition-all duration-300 ${
+                    className={`w-full px-4 py-3 rounded-2xl bg-gray-50 border-2 border-gray-300 text-base text-luxury-dark placeholder-luxury-titanium/60 focus:outline-none focus:border-luxury-blue focus:bg-white transition-all duration-300 ${
                       errors.phone ? 'border-red-400 focus:border-red-400 bg-red-50/10' : ''
                     }`}
                   />
@@ -215,7 +215,7 @@ export default function ContactUs() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-luxury-graphite uppercase tracking-widest mb-1.5">
+                  <label className="block text-sm font-bold text-luxury-graphite uppercase tracking-widest mb-1.5">
                     Transmission Content
                   </label>
                   <textarea
@@ -225,7 +225,7 @@ export default function ContactUs() {
                     disabled={status === 'submitting'}
                     rows={4}
                     placeholder="Describe your cargo needs, coordinates, or system inquiry..."
-                    className={`w-full px-4 py-3 rounded-2xl bg-gray-50 border-2 border-gray-300 text-sm text-luxury-dark placeholder-luxury-titanium/60 focus:outline-none focus:border-luxury-gold focus:bg-white transition-all duration-300 resize-none ${
+                    className={`w-full px-4 py-3 rounded-2xl bg-gray-50 border-2 border-gray-300 text-base text-luxury-dark placeholder-luxury-titanium/60 focus:outline-none focus:border-luxury-blue focus:bg-white transition-all duration-300 resize-none ${
                       errors.message ? 'border-red-400 focus:border-red-400 bg-red-50/10' : ''
                     }`}
                   />
@@ -240,7 +240,7 @@ export default function ContactUs() {
                 <button
                   type="submit"
                   disabled={status === 'submitting'}
-                  className="w-full flex items-center justify-center gap-3 bg-luxury-dark text-white font-bold uppercase tracking-widest text-sm py-5 rounded-2xl shadow-md transition-all duration-300 hover:bg-luxury-gold hover:text-luxury-dark disabled:bg-luxury-titanium"
+                  className="w-full flex items-center justify-center gap-3 bg-luxury-dark text-white font-bold uppercase tracking-widest text-sm py-5 rounded-2xl shadow-md transition-all duration-300 hover:bg-luxury-blue hover:text-white disabled:bg-luxury-titanium"
                 >
                   {status === 'submitting' ? (
                     <>
@@ -267,20 +267,20 @@ export default function ContactUs() {
                 transition={{ duration: 0.4 }}
                 className="p-8 text-center flex flex-col items-center justify-center min-h-[350px]"
               >
-                <div className="mb-4 p-4 rounded-full bg-luxury-gold/5 border border-luxury-gold text-luxury-gold relative">
+                <div className="mb-4 p-4 rounded-full bg-luxury-blue/5 border border-luxury-blue text-luxury-blue relative">
                   <CheckCircle2 size={36} className="relative z-10" />
                 </div>
                 <h3 className="text-xl font-bold text-luxury-dark mb-2">
                   Telemetry Transmitted
                 </h3>
-                <p className="text-xs font-light text-luxury-graphite max-w-xs mb-6 leading-relaxed">
+                <p className="text-sm font-light text-luxury-graphite max-w-xs mb-6 leading-relaxed">
                   Your message has been sent. The Airown flight command center will review your coordinates and respond shortly.
                 </p>
                 <button
                   onClick={resetForm}
-                  className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full border border-gray-300 text-luxury-dark hover:border-luxury-gold"
+                  className="flex items-center gap-1.5 text-sm font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full border border-gray-300 text-luxury-dark hover:border-luxury-blue"
                 >
-                  <Sparkles size={12} className="text-luxury-gold" />
+                  <Sparkles size={12} className="text-luxury-blue" />
                   New Vector Submission
                 </button>
               </motion.div>

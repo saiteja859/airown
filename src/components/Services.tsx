@@ -14,8 +14,8 @@ export default function Services() {
       subtitle: 'Food Delivery',
       description: 'Partnered with Michelin-starred restaurants and top culinary artisans. Thermal-controlled flight vaults preserve your food at exact cooking temperatures inside sealed carbon modules.',
       timeline: 'Instant (10-15 Mins)',
-      badgeColor: 'border-luxury-gold text-luxury-gold bg-luxury-gold/5',
-      iconColor: 'text-luxury-gold',
+      badgeColor: 'border-luxury-blue text-luxury-blue bg-luxury-blue/5',
+      iconColor: 'text-luxury-blue',
       isLive: true,
       specs: {
         temp: 'Climate Controlled (65°C / 4°C)',
@@ -73,7 +73,7 @@ export default function Services() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-24">
           <div className="max-w-xl">
-            <span className="text-xs font-bold uppercase tracking-widest text-luxury-gold mb-3 block">
+            <span className="text-sm font-bold uppercase tracking-widest text-luxury-blue mb-3 block">
               Autonomous Delivery Services
             </span>
             <h2 className="text-3xl md:text-5xl font-light tracking-tight text-luxury-dark leading-tight">
@@ -81,7 +81,7 @@ export default function Services() {
               <span className="font-semibold text-gradient-metallic">Logistics of Tomorrow</span>
             </h2>
           </div>
-          <p className="text-sm font-light text-luxury-graphite max-w-sm mt-4 md:mt-0 leading-relaxed">
+          <p className="text-base font-light text-luxury-graphite max-w-sm mt-4 md:mt-0 leading-relaxed">
             We are curating a luxury suite of aerial transit solutions. From hot dining to urgent medical items, our skyways elevate your lifestyle.
           </p>
         </div>
@@ -102,8 +102,8 @@ export default function Services() {
                 onClick={() => setSelectedService(service.id as any)}
                 className={`group relative flex flex-col justify-between rounded-3xl p-8 cursor-pointer transition-all duration-500 ${
                   isSelected
-                    ? 'bg-white shadow-luxury-glow border-2 border-luxury-gold -translate-y-2'
-                    : 'glass-card border border-luxury-platinum/50 hover:border-luxury-gold/30 hover:-translate-y-1'
+                    ? 'bg-white shadow-luxury-glow border-2 border-luxury-blue -translate-y-2'
+                    : 'glass-card border border-luxury-platinum/50 hover:border-luxury-blue/30 hover:-translate-y-1'
                 }`}
               >
                 <div>
@@ -114,8 +114,8 @@ export default function Services() {
                     </span>
                     {service.isLive && (
                       <span className="flex h-2.5 w-2.5 relative">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-luxury-gold opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-luxury-gold"></span>
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-luxury-blue opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-luxury-blue"></span>
                       </span>
                     )}
                   </div>
@@ -126,15 +126,15 @@ export default function Services() {
                   </div>
 
                   {/* Title & Subtitle */}
-                  <h3 className="text-xs font-bold tracking-widest text-luxury-titanium uppercase mb-1">
+                  <h3 className="text-sm font-bold tracking-widest text-luxury-titanium uppercase mb-1">
                     {service.subtitle}
                   </h3>
-                  <h4 className="text-2xl font-light text-luxury-dark mb-4 group-hover:text-luxury-gold transition-colors duration-300">
+                  <h4 className="text-2xl font-light text-luxury-dark mb-4 group-hover:text-luxury-blue transition-colors duration-300">
                     {service.title}
                   </h4>
 
                   {/* Description */}
-                  <p className="text-sm font-light text-luxury-graphite leading-relaxed mb-6">
+                  <p className="text-base font-light text-luxury-graphite leading-relaxed mb-6">
                     {service.description}
                   </p>
                 </div>
@@ -142,14 +142,14 @@ export default function Services() {
                 {/* Footer details */}
                 <div className="mt-8 border-t border-luxury-platinum/30 pt-6 flex justify-between items-center">
                   <div>
-                    <span className="text-[10px] text-luxury-titanium block uppercase tracking-widest font-semibold mb-0.5">
+                    <span className="text-xs text-luxury-titanium block uppercase tracking-widest font-semibold mb-0.5">
                       Class & Velocity
                     </span>
-                    <span className="text-sm font-medium text-luxury-dark">
+                    <span className="text-base font-medium text-luxury-dark">
                       {service.timeline}
                     </span>
                   </div>
-                  <button className="chrome-reflect relative flex h-10 w-10 items-center justify-center rounded-full bg-luxury-dark text-white shadow-sm group-hover:bg-luxury-gold group-hover:text-luxury-dark transition-colors duration-300">
+                  <button className="chrome-reflect relative flex h-10 w-10 items-center justify-center rounded-full bg-luxury-dark text-white shadow-sm group-hover:bg-luxury-blue group-hover:text-luxury-dark transition-colors duration-300">
                     <ArrowUpRight size={16} />
                   </button>
                 </div>
@@ -159,10 +159,10 @@ export default function Services() {
         </div>
 
         {/* Interactive Specification Inspector */}
-        <div className="glass-card-interactive rounded-3xl p-8 border border-luxury-gold/30 shadow-premium">
+        <div className="glass-card-interactive rounded-3xl p-8 border border-luxury-blue/30 shadow-premium">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6 border-b border-luxury-platinum/30 pb-4">
             <div>
-              <span className="text-[10px] font-bold tracking-widest text-luxury-gold uppercase block">
+              <span className="text-xs font-bold tracking-widest text-luxury-blue uppercase block">
                 TECHNICAL SPECIFICATION INSPECTOR
               </span>
               <h4 className="text-lg font-semibold text-luxury-dark">
@@ -198,35 +198,35 @@ export default function Services() {
               className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"
             >
               <div className="p-4 rounded-2xl bg-white/70 border border-luxury-platinum/40">
-                <div className="flex items-center gap-2 text-luxury-gold mb-1">
+                <div className="flex items-center gap-2 text-luxury-blue mb-1">
                   <Thermometer size={16} />
-                  <span className="text-[10px] font-bold uppercase tracking-widest">Temperature</span>
+                  <span className="text-xs font-bold uppercase tracking-widest">Temperature</span>
                 </div>
-                <span className="text-xs font-semibold text-luxury-dark">{activeData.specs.temp}</span>
+                <span className="text-sm font-semibold text-luxury-dark">{activeData.specs.temp}</span>
               </div>
 
               <div className="p-4 rounded-2xl bg-white/70 border border-luxury-platinum/40">
                 <div className="flex items-center gap-2 text-luxury-copper mb-1">
                   <Gauge size={16} />
-                  <span className="text-[10px] font-bold uppercase tracking-widest">Payload Limit</span>
+                  <span className="text-xs font-bold uppercase tracking-widest">Payload Limit</span>
                 </div>
-                <span className="text-xs font-semibold text-luxury-dark">{activeData.specs.payload}</span>
+                <span className="text-sm font-semibold text-luxury-dark">{activeData.specs.payload}</span>
               </div>
 
               <div className="p-4 rounded-2xl bg-white/70 border border-luxury-platinum/40">
-                <div className="flex items-center gap-2 text-amber-500 mb-1">
+                <div className="flex items-center gap-2 text-luxury-blue mb-1">
                   <Clock size={16} />
-                  <span className="text-[10px] font-bold uppercase tracking-widest">Velocity Profile</span>
+                  <span className="text-xs font-bold uppercase tracking-widest">Velocity Profile</span>
                 </div>
-                <span className="text-xs font-semibold text-luxury-dark">{activeData.specs.speed}</span>
+                <span className="text-sm font-semibold text-luxury-dark">{activeData.specs.speed}</span>
               </div>
 
               <div className="p-4 rounded-2xl bg-white/70 border border-luxury-platinum/40">
                 <div className="flex items-center gap-2 text-luxury-graphite mb-1">
                   <ShieldCheck size={16} />
-                  <span className="text-[10px] font-bold uppercase tracking-widest">Security Lock</span>
+                  <span className="text-xs font-bold uppercase tracking-widest">Security Lock</span>
                 </div>
-                <span className="text-xs font-semibold text-luxury-dark">{activeData.specs.security}</span>
+                <span className="text-sm font-semibold text-luxury-dark">{activeData.specs.security}</span>
               </div>
             </motion.div>
           </AnimatePresence>

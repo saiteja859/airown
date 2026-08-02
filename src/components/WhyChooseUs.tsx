@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         
         <div className="text-center mb-12">
-          <span className="text-xs font-bold uppercase tracking-widest text-luxury-gold mb-2 block">
+          <span className="text-sm font-bold uppercase tracking-widest text-luxury-blue mb-2 block">
             Why Airown
           </span>
           <h2 className="text-2xl md:text-4xl font-light tracking-tight text-luxury-dark leading-tight">
@@ -68,23 +68,23 @@ export default function WhyChooseUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-100px' }}
                 transition={{ duration: 0.6, delay: idx * 0.05, ease: [0.16, 1, 0.3, 1] as const }}
-                className="group bg-white rounded-3xl p-6 border-2 border-gray-300 transition-all duration-300 hover:border-luxury-gold flex flex-col justify-between"
+                className="group bg-white rounded-3xl p-6 border-2 border-gray-300 transition-all duration-300 hover:border-luxury-blue flex flex-col justify-between"
               >
                 <div>
-                  <div className="mb-4 p-3 w-10 h-10 flex items-center justify-center rounded-xl bg-gray-50 border border-gray-300 text-luxury-gold transition-colors duration-300">
+                  <div className="mb-4 p-3 w-10 h-10 flex items-center justify-center rounded-xl bg-gray-50 border border-gray-300 text-luxury-blue transition-colors duration-300">
                     <Icon size={18} strokeWidth={2} />
                   </div>
                   
-                  <h3 className="text-base font-semibold text-luxury-dark mb-2 group-hover:text-luxury-gold transition-colors duration-300">
+                  <h3 className="text-base font-semibold text-luxury-dark mb-2 group-hover:text-luxury-blue transition-colors duration-300">
                     {benefit.title}
                   </h3>
                   
-                  <p className="text-xs font-light text-luxury-graphite leading-relaxed">
+                  <p className="text-sm font-light text-luxury-graphite leading-relaxed">
                     {benefit.desc}
                   </p>
                 </div>
 
-                <div className="mt-6 pt-3 border-t border-gray-200 text-[9px] font-bold tracking-widest text-luxury-titanium uppercase">
+                <div className="mt-6 pt-3 border-t border-gray-200 text-xs font-bold tracking-widest text-luxury-titanium uppercase">
                   CLASS 1 AVIONICS
                 </div>
               </motion.div>

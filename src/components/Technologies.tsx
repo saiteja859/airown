@@ -125,7 +125,7 @@ export default function Technologies() {
         
         {/* Header */}
         <div className="text-center mb-12">
-          <span className="text-xs font-bold uppercase tracking-widest text-luxury-gold mb-2 block">
+          <span className="text-sm font-bold uppercase tracking-widest text-luxury-blue mb-2 block">
             Hardware Engineering
           </span>
           <h2 className="text-2xl md:text-4xl font-light tracking-tight text-luxury-dark leading-tight">
@@ -143,17 +143,17 @@ export default function Technologies() {
               return (
                 <div
                   key={feat.id}
-                  className="p-3.5 rounded-2xl border-2 border-gray-300 bg-white shadow-sm transition-all duration-300 hover:border-luxury-gold"
+                  className="p-3.5 rounded-2xl border-2 border-gray-300 bg-white shadow-sm transition-all duration-300 hover:border-luxury-blue"
                 >
                   <div className="flex items-center gap-2.5 mb-1">
-                    <div className="p-1.5 rounded-lg bg-gray-50 border border-gray-300 text-luxury-gold">
+                    <div className="p-1.5 rounded-lg bg-gray-50 border border-gray-300 text-luxury-blue">
                       <Icon size={14} strokeWidth={2} />
                     </div>
-                    <h4 className="font-bold text-luxury-dark text-xs leading-tight">
+                    <h4 className="font-bold text-luxury-dark text-sm leading-tight">
                       {feat.title}
                     </h4>
                   </div>
-                  <p className="text-[10px] font-light text-luxury-graphite leading-relaxed">
+                  <p className="text-xs font-light text-luxury-graphite leading-relaxed">
                     {feat.desc}
                   </p>
                 </div>
@@ -192,17 +192,17 @@ export default function Technologies() {
               return (
                 <div
                   key={feat.id}
-                  className="p-3.5 rounded-2xl border-2 border-gray-300 bg-white shadow-sm transition-all duration-300 hover:border-luxury-gold"
+                  className="p-3.5 rounded-2xl border-2 border-gray-300 bg-white shadow-sm transition-all duration-300 hover:border-luxury-blue"
                 >
                   <div className="flex items-center gap-2.5 mb-1">
-                    <div className="p-1.5 rounded-lg bg-gray-50 border border-gray-300 text-luxury-gold">
+                    <div className="p-1.5 rounded-lg bg-gray-50 border border-gray-300 text-luxury-blue">
                       <Icon size={14} strokeWidth={2} />
                     </div>
-                    <h4 className="font-bold text-luxury-dark text-xs leading-tight">
+                    <h4 className="font-bold text-luxury-dark text-sm leading-tight">
                       {feat.title}
                     </h4>
                   </div>
-                  <p className="text-[10px] font-light text-luxury-graphite leading-relaxed">
+                  <p className="text-xs font-light text-luxury-graphite leading-relaxed">
                     {feat.desc}
                   </p>
                 </div>
@@ -215,7 +215,7 @@ export default function Technologies() {
         {/* Comparative Performance Matrix */}
         <div className="bg-gray-50 rounded-3xl p-6 md:p-8 border-2 border-gray-300 shadow-sm">
           <div className="text-center mb-6">
-            <span className="text-[10px] font-bold text-luxury-gold uppercase tracking-widest block mb-1">
+            <span className="text-xs font-bold text-luxury-blue uppercase tracking-widest block mb-1">
               PERFORMANCE BENCHMARK
             </span>
             <h3 className="text-xl font-semibold text-luxury-dark">
@@ -226,12 +226,12 @@ export default function Technologies() {
           <div className="divide-y divide-gray-300">
             {comparison.map((item, idx) => (
               <div key={idx} className="py-3.5 grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
-                <span className="text-xs font-bold text-luxury-dark">{item.metric}</span>
-                <div className="flex items-center gap-2 text-xs text-red-600 font-light">
+                <span className="text-sm font-bold text-luxury-dark">{item.metric}</span>
+                <div className="flex items-center gap-2 text-sm text-red-600 font-light">
                   <X size={14} />
                   <span>{item.road}</span>
                 </div>
-                <div className="flex items-center gap-2 text-xs text-luxury-gold font-semibold">
+                <div className="flex items-center gap-2 text-sm text-luxury-blue font-semibold">
                   <Check size={14} />
                   <span>{item.sky}</span>
                 </div>

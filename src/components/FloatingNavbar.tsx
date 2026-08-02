@@ -23,6 +23,7 @@ export default function FloatingNavbar() {
     { name: 'About Us', href: '#about-us' },
     { name: 'Technologies', href: '#technologies' },
     { name: 'Contact Us', href: '#contact-us' },
+    { name: 'Press Kit', href: '#contact-us' },
   ];
 
   const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -43,7 +44,11 @@ export default function FloatingNavbar() {
           }`}
       >
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
+        <a
+          href="#hero-section"
+          onClick={(e) => handleScrollTo(e, '#hero-section')}
+          className="flex items-center gap-2 group"
+        >
           <img
             src="/assets/logo2.png"
             alt="Airown Logo"
@@ -58,8 +63,8 @@ export default function FloatingNavbar() {
               key={item.name}
               href={item.href}
               onClick={(e) => handleScrollTo(e, item.href)}
-              className={`relative px-4 py-1.5 text-xs md:text-sm font-semibold rounded-full transition-all duration-300 ${activeSection === item.href
-                ? 'text-luxury-dark bg-luxury-gold/10 font-bold border border-luxury-gold/30'
+              className={`relative px-4 py-1.5 text-sm md:text-base font-semibold rounded-full transition-all duration-300 ${activeSection === item.href
+                ? 'text-luxury-dark bg-luxury-blue/10 font-bold border border-luxury-blue/30'
                 : pastHero
                   ? 'text-luxury-dark hover:text-luxury-dark hover:bg-gray-100/60'
                   : 'text-luxury-graphite hover:text-luxury-dark hover:bg-white/10'
@@ -73,7 +78,7 @@ export default function FloatingNavbar() {
         {/* Hamburger Toggle Button (Mobile Only) */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className={`flex sm:hidden p-2 rounded-full border border-gray-300 bg-white/95 text-luxury-dark hover:border-luxury-gold transition-all duration-300`}
+          className={`flex sm:hidden p-2 rounded-full border border-gray-300 bg-white/95 text-luxury-dark hover:border-luxury-blue transition-all duration-300`}
         >
           {menuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
@@ -96,8 +101,8 @@ export default function FloatingNavbar() {
                   handleScrollTo(e, item.href);
                   setMenuOpen(false);
                 }}
-                className={`w-full text-center py-3 text-sm font-semibold rounded-2xl transition-all duration-300 ${activeSection === item.href
-                  ? 'text-luxury-dark bg-luxury-gold/10 border border-luxury-gold/30'
+                className={`w-full text-center py-3 text-base font-semibold rounded-2xl transition-all duration-300 ${activeSection === item.href
+                  ? 'text-luxury-dark bg-luxury-blue/10 border border-luxury-blue/30'
                   : 'text-luxury-graphite hover:text-luxury-dark hover:bg-gray-100/60'
                   }`}
               >
