@@ -20,7 +20,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero-section"
-      className="relative w-screen h-screen flex flex-col justify-end items-center overflow-hidden bg-white border-b border-gray-200"
+      className="relative w-screen h-screen flex flex-col items-center overflow-hidden bg-white border-b border-gray-200"
       style={{
         backgroundImage: bgImage,
         backgroundSize: 'cover',
@@ -31,15 +31,15 @@ export default function HeroSection() {
       {/* Subtle overlay */}
       <div className="absolute inset-0 bg-white/10 pointer-events-none" />
 
-      {/* Content shifted further down — more bottom padding, less from top */}
-      <div className="relative z-10 w-full max-w-4xl px-6 flex flex-col items-center text-center pb-10">
+      {/* Responsive layout: split top/bottom on mobile, grouped at bottom on desktop */}
+      <div className="relative z-10 w-full h-full max-w-4xl px-6 flex flex-col justify-between sm:justify-end sm:gap-4 items-center text-center pt-28 pb-10 sm:pt-0">
 
         {/* Headline */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-luxury-dark mb-4 leading-tight bg-white/40 backdrop-blur-[2px] rounded-2xl px-6 py-2 border border-white/40"
+          className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-luxury-dark leading-tight bg-white/40 backdrop-blur-[2px] rounded-2xl px-6 py-2 border border-white/40"
         >
           The Future Doesn't Drive.
           <br />
