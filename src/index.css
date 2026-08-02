@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+  }
+
+  body {
+    background-color: #F8F9FA;
+    color: #121212;
+    overflow-x: hidden;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #EAEAEA;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #B0B0B5;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #707075;
+  }
+}
+
+/* Lenis Smooth Scroll Configuration */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overflow: clip;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+@layer utilities {
+  /* Crisp Glassmorphism with Higher Opacity Borders */
+  .glass-nav {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(210, 210, 215, 0.8);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .glass-card {
+    background: #FFFFFF;
+    border: 1.5px solid #E2E4E8;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card:hover {
+    border-color: #D4AF37;
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.12);
+    transform: translateY(-4px);
+  }
+
+  .glass-card-interactive {
+    background: #FFFFFF;
+    border: 1.5px solid #D4AF37;
+    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.08);
+  }
+
+  /* Distinct Section Differentiation Backgrounds */
+  .section-white {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #EAEAEA;
+  }
+
+  .section-gray {
+    background-color: #F4F5F7;
+    border-bottom: 1px solid #E2E4E8;
+  }
+
+  /* Text Gradients */
+  .text-gradient-metallic {
+    background: linear-gradient(135deg, #121212 30%, #3A3A3C 70%, #6E6E73 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #9A7B0C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Background Patterns */
+  .bg-dots {
+    background-image: radial-gradient(rgba(212, 175, 55, 0.18) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
